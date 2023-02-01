@@ -133,7 +133,7 @@ func (c *Compiler) Compile(ctx context.Context) *engine.Spec {
 	if c.Netrc != nil {
 		netrcpath := filepath.Join(homedir, netrc)
 		netrcdata := fmt.Sprintf(
-			"machine %s login %s password %s",
+			"machine %s login %s password %s\n",
 			c.Netrc.Machine,
 			c.Netrc.Login,
 			c.Netrc.Password,
