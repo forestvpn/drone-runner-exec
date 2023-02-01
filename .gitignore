@@ -5,3 +5,4 @@ docs/public/*
 docs/themes/*
 .env
 NOTES*
+.idea/

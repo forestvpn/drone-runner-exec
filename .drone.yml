@@ -32,7 +32,7 @@ steps:
       - release/drone_*.tar.gz
       - release/drone_*_checksums.txt
     api_key:
-      from_secret: github_api_key
+      from_secret: GITHUB_TOKEN
   when:
     event: [ tag ]
 
